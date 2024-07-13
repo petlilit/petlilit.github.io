@@ -27,9 +27,9 @@ const highScore1 = document.getElementById("highScore");
 const levelColor = document.getElementById("level");
 const eat = document.getElementById("eat");
 const die = document.getElementById("die");
+const levelupvolume = document.getElementById("levelup");
 
 let color = randomColor(colors);
-console.log(color);
 
 
 gameBorder1.style.border = color[0] + " solid 10px";
@@ -242,21 +242,31 @@ function levelUp(score) {
     if (score == "5") {
         document.querySelector('#level').textContent = 'Lev.2';
         speed = 150;
+        levelupvolume.volume = 0.3;
+        levelupvolume.play();
     } else if(score == "10") {
         document.querySelector('#level').textContent = 'Lev.3';
         speed = 120;
+        levelupvolume.volume = 0.3;
+        levelupvolume.play();
     }else if(score == "15"){
         document.querySelector('#level').textContent = 'Lev.4';
         speed = 100;
+        levelupvolume.volume = 0.3;
+        levelupvolume.play();
     }else if (score == "20") {
         document.querySelector('#level').textContent = 'Lev.5';
         speed = 80;
     }else if (score == "25") {
         document.querySelector('#level').textContent = 'Lev.6';
         speed = 60;
+        levelupvolume.volume = 0.3;
+        levelupvolume.play();
     }else if (score == "30") {
         document.querySelector('#level').textContent = 'Lev.7';
         speed = 50;
+        levelupvolume.volume = 0.3;
+        levelupvolume.play();
     }
 }
 
