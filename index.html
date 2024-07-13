@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    <title>Snake</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div>
+
+        <div class="scores">
+            <h1 id="score">000</h1>
+            <h1 id="level">Lev.1</h1>
+            <h1 id="highScore">000</h1>
+        </div>
+
+        <div id="gb1" class="game-border-1">
+            <div id="gb2" class="game-border-2">
+                <div id="gb3" class="game-border-3">
+                    <div id="game-board">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <h1 id="settings">Press spase bar to start the game</h1>
+    <img id="logo" src="./snake_game.png" alt="Snake game">
+    <audio id="eat" src="./igrovaya-sreda-audio-energoobespechenie-audio-material-39368.mp3"></audio> 
+    <audio id="die" src="./vyibor-nujnoy-igrovoy-kategorii.mp3"></audio>
+    <audio id="levelup" src="./zvuk-pobedyi-v-igrovom-urovne-30120.mp3"></audio>
+    <script src="./script.js"></script>
+</body>
+</html>
